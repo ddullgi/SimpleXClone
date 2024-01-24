@@ -1,3 +1,13 @@
+import { TabProvider, Tab, PostForm } from "@/app/(afterLogin)/home/_component";
+import styles from "./home.module.css";
+
 export default function Home() {
-  return <main>홈페이지</main>;
+  return (
+    <main className={styles.main}>
+      <TabProvider>
+        <Tab />
+        <PostForm />
+      </TabProvider>
+    </main>
+  );
 }
