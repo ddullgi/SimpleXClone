@@ -9,11 +9,12 @@ import {
   TrendSection,
 } from "@/app/(afterLogin)/_component";
 
-export default async function AfterLoginLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode;
-}) {
+  modal: React.ReactNode;
+};
+
+export default async function AfterLoginLayout({ children, modal }: Props) {
   return (
     <div className={styles.container}>
       <header className={styles.leftSectionWrapper}>
@@ -60,6 +61,7 @@ export default async function AfterLoginLayout({
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }
