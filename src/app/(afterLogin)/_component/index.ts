@@ -4,3 +4,4 @@ export { default as Trend } from "./Trend";
 export { default as TrendSection } from "./TrendSection";
 export { default as FollowRecommend } from "./FollowRecommend";
 export { default as Post } from "./Post";
+export { default as ActionButtons } from "./ActionButtons";
